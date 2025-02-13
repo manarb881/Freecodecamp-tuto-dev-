@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 *{
 
@@ -526,7 +526,7 @@ top: 50px;
       grid-template-rows: (1fr, 3);
       
     justify-content: space-around;
-    border: 1px solid rgb(209, 204, 204);
+    border: 1px  rgb(56, 55, 55);
 
    align-items: center;
    height: 200px;
@@ -538,6 +538,7 @@ top: 50px;
   width: 250px;
    transition: background-color 0.5s ease;
    line-height: 2.5;
+  
 }
 .skill1:hover{
     background-color: #eea9f7;
