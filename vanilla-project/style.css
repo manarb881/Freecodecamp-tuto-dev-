@@ -502,6 +502,122 @@ top: 50px;
     box-shadow: 1px 5px 8px 10px rgb(179, 174, 174);
 }
 
+/* Responsive Styles */
+
+/* For devices smaller than 1024px (Tablets and smaller screens) */
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .contain6 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .center, .center2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .manar {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* For devices smaller than 768px (Mobile Phones) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .skills .div1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sub-divs {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about-me .text1, .about-me .text2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .skills .sub-divs {
+        margin: 10px 0;
+    }
+
+    .boss {
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+}
+
+/* For devices smaller than 480px (Small Mobile Phones) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .center {
+        font-size: 18px;
+    }
+
+    .center2 {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .skills .ktiba .DO1 {
+        font-size: 20px;
+    }
+}
+
 /*skill*/
 
 .whole-skill{
@@ -745,6 +861,74 @@ transition: background-color 0.3s ease;
 background-color: blueviolet;
 }
 
+/* General Responsive Styling */
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 10px;
+    }
+    .certificates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .certificate-card, .certificate-card1 {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cv .down button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificate-card, .certificate-card1 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .whole-skill {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill1 {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cv .down button {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .its2 h1 {
+        font-size: 18px;
+    }
+
+    .certificate-title, .certificate-provider, .certificate-date {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .whole-skill {
+        font-size: 14px;
+    }
+
+    .events h1 {
+        font-size: 16px;
+    }
+}
+
 
 /*contact*/
 
@@ -947,4 +1131,108 @@ footer a:hover{
     position: absolute;
     top: 150px;
     left: 900px;
+}
+
+
+/* General Responsive Styles */
+@media only screen and (max-width: 1200px) {
+    .contacti {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .social-icons ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons ul li {
+        margin: 10px 0;
+    }
+
+    form#contactForm {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .footer .navi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contacti .them h1 {
+        font-size: 24px;
+    }
+
+    .social-icons ul {
+        font-size: 14px;
+    }
+
+    .forma {
+        padding: 10px;
+    }
+
+    form#contactForm .content label {
+        font-size: 14px;
+    }
+
+    form#contactForm .content input,
+    form#contactForm .content textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .footer .icon-container {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contacti {
+        padding: 10px;
+    }
+
+    .contacti .them h1 {
+        font-size: 18px;
+    }
+
+    .social-icons ul {
+        padding: 0;
+    }
+
+    .social-icons ul li a {
+        font-size: 12px;
+    }
+
+    .forma {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .forma h2 {
+        font-size: 16px;
+    }
+
+    form#contactForm .content label {
+        font-size: 12px;
+    }
+
+    form#contactForm .content input,
+    form#contactForm .content textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .footer .rights p {
+        text-align: center;
+    }
 }
